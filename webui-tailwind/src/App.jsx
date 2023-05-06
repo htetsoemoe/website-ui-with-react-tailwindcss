@@ -3,7 +3,8 @@ import { faker } from '@faker-js/faker';
 import { BsList, BsSearch, BsCart4 } from 'react-icons/bs'
 import { AiOutlineLogin } from 'react-icons/ai'
 
-import logo from '../public/assets/logo.jpg'
+import logo from './assets/logo.jpg'
+import coffeeBean from './assets/coffee-bean.jpg'
 
 const App = () => {
 
@@ -29,7 +30,7 @@ const App = () => {
             <div className='font-bold lg:flex hidden gap-2'>
               <div className={menuClassActive}>
                 <a href="#home"
-                  style={{color: isActive ? currentColor : ''}}>Home</a>
+                  style={{ color: isActive ? currentColor : '' }}>Home</a>
               </div>
               <div className={menuClass}>
                 <a href="#menu">Menu</a>
@@ -53,7 +54,7 @@ const App = () => {
                 <BsCart4 />
                 <div className='absolute -top-0 -right-1 h-4 w-5 text-xs
                   text-center text-white bottom-1 rounded-full'
-                  style={{background: currentColor}}>
+                  style={{ background: currentColor }}>
                   <p>7</p>
                 </div>
               </div>
@@ -63,7 +64,29 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div id="hero" className='pl-5 pr-5'></div>
+        <div id="hero" className='pl-5 pr-5'>
+          <div className="transform duration-500 hover:shadow-2xl hover:-translate-y-1 relative">
+            <img className="xl:max-w-6xl" src={coffeeBean} alt="" />
+            <div className="bg-white md:p-12 p-12 pt-8 lg:max-w-3xl w-full lg:absolute top-48 right-5 shadow-2xl">
+              <div className="flex justify-between font-bold text-sm">
+                <p>Coffee From Heaven</p>
+                <p>{faker.date.past().getFullYear()}</p>
+              </div>
+              <h3 className="text-5xl font-bold mt-4 md:mt-10 uppercase">
+                Coffee From Heaven
+              </h3>
+              <p className="pt-5">
+                {faker.lorem.sentences()}
+              </p>
+              <p className="p-3">
+                <button className='p-3 w-60 text-white font-bold rounded-full transform duration-500 hover:-translate-y-1'
+                  style={{background: currentColor}}>
+                  Register Now
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
         <div id="menu" className='pl-5 pr-5'></div>
         <div id="product" className='pl-5 pr-5'></div>
         <div id="blog" className='pl-5 pr-5'></div>
