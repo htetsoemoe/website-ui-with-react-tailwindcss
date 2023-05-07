@@ -1,10 +1,14 @@
 import React from 'react'
 import { faker } from '@faker-js/faker';
-import { BsList, BsSearch, BsCart4 } from 'react-icons/bs'
+import { BsList, BsSearch, BsCart4, BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
 import { AiOutlineLogin } from 'react-icons/ai'
 
 import logo from './assets/logo.jpg'
 import coffeeBean from './assets/coffee-bean.jpg'
+import coffee1 from './assets/coffee-1.jpg'
+import coffee2 from './assets/coffee-2.jpg'
+import coffee3 from './assets/coffee-3.jpg'
+import coffee4 from './assets/coffee-4.jpg'
 
 const App = () => {
 
@@ -80,14 +84,35 @@ const App = () => {
               </p>
               <p className="p-3">
                 <button className='p-3 w-60 text-white font-bold rounded-full transform duration-500 hover:-translate-y-1'
-                  style={{background: currentColor}}>
+                  style={{ background: currentColor }}>
                   Register Now
                 </button>
               </p>
             </div>
           </div>
         </div>
-        <div id="menu" className='pl-5 pr-5'></div>
+        <div id="menu" className='pl-5 pr-5'>
+          <div className="p-5 pt-10">
+            <div className="text-[26px] font-bold text-center uppercase">
+              Our Menu
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5">
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee1} alt=""/>
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{color: currentColor}}><BsStar /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="product" className='pl-5 pr-5'></div>
         <div id="blog" className='pl-5 pr-5'></div>
         <div id="about" className='pl-5 pr-5'></div>
