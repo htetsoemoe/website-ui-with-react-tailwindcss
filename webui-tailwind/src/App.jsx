@@ -67,7 +67,7 @@ const App = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> {/** close brace of home section */}
         <div id="hero" className='pl-5 pr-5'>
           <div className="transform duration-500 hover:shadow-2xl hover:-translate-y-1 relative">
             <img className="xl:max-w-6xl" src={coffeeBean} alt="" />
@@ -90,7 +90,7 @@ const App = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> {/** close brace of hero section */}
         <div id="menu" className='pl-5 pr-5'>
           <div className="p-5 pt-10">
             <div className="text-[26px] font-bold text-center uppercase">
@@ -99,7 +99,7 @@ const App = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5">
             <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
-              hover:-translate-y-2 bg-white">
+              hover:-translate-y-2 bg-white rounded-full">
               <img className="object-cover w-full rounded-2xl h-64" src={coffee1} alt=""/>
               <div className="p-5">
                 <div className="flex items center gap-1">
@@ -110,12 +110,250 @@ const App = () => {
                   <span style={{color: currentColor}}><BsStar /></span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div id="product" className='pl-5 pr-5'></div>
-        <div id="blog" className='pl-5 pr-5'></div>
-        <div id="about" className='pl-5 pr-5'></div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)} 
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{background: currentColor}}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee2} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee3} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee4} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+          </div>  {/** close brace of grid layout */}
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5 pt-5">
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee1} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee2} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee3} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+
+            <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
+              hover:-translate-y-2 bg-white rounded-full">
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee4} alt="" />
+              <div className="p-5">
+                <div className="flex items center gap-1">
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarFill /></span>
+                  <span style={{ color: currentColor }}><BsStarHalf /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
+                </div>
+              </div>
+              <div className="pl-5 pr-5">
+                <h5 className="text-2xl font-bold tracking-tight">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences(3)}
+                </p>
+              </div>
+              <div className="flex flex-row p-5 justify-between items-baseline">
+                <p>
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
+                  style={{ background: currentColor }}>
+                  Add to cart
+                </button>
+              </div>
+            </div> {/** close brace fo card */}
+          </div>  {/** close brace of grid layout */}
+        </div>  {/** close brace of #menu */}
+        <div id="product" className='pl-5 pr-5'>
+
+        </div> {/** close brace of product section */}
+        <div id="blog" className='pl-5 pr-5'></div> {/** close brace of blog section */}
+        <div id="about" className='pl-5 pr-5'></div> {/** close brace of about section */}
       </div>
     </div>
   )
