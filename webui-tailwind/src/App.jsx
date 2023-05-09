@@ -1,6 +1,6 @@
 import React from 'react'
 import { faker } from '@faker-js/faker';
-import { BsList, BsSearch, BsCart4, BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs'
+import { BsList, BsSearch, BsCart4, BsStarFill, BsStarHalf, BsStar, BsHeart, BsArrowBarUp } from 'react-icons/bs'
 import { AiOutlineLogin } from 'react-icons/ai'
 
 import logo from './assets/logo.jpg'
@@ -9,6 +9,9 @@ import coffee1 from './assets/coffee-1.jpg'
 import coffee2 from './assets/coffee-2.jpg'
 import coffee3 from './assets/coffee-3.jpg'
 import coffee4 from './assets/coffee-4.jpg'
+
+import product1 from './assets/coffee-6.jpg'
+import product2 from './assets/coffee-7.jpg'
 
 const App = () => {
 
@@ -20,6 +23,19 @@ const App = () => {
 
   return (
     <div className="bg-gray-50 text-slate-900">
+      {/* create to home button */}
+      <div className="bg-gray-50 text-gray-700">
+        <div className='fixed bottom-4 right-4' style={{zIndex: '100'}}>
+          <button type='button'
+            onClick={() => {}}
+            style={{ background: currentColor, borderRadius: '50%'}}
+            className='text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-gray-50 transform duration-500 hover:-translate-y-2'>
+            <a href="#home">
+              <BsArrowBarUp />
+            </a>
+          </button>
+        </div>
+      </div>
       <div className="container mx-auto transform duration-500">
         <div id="home" className="pl-4 pr-4 pt-5 pb-10">
           <div className="flex justify-between items-center align-middle">
@@ -350,7 +366,14 @@ const App = () => {
           </div>  {/** close brace of grid layout */}
         </div>  {/** close brace of #menu */}
         <div id="product" className='pl-5 pr-5'>
+          <div className="p-5 pt-10">
+            <div className="text-[26px] font-bold text-center uppercase">
+              product
+            </div>
+          </div>
+          <div className="">
 
+          </div>
         </div> {/** close brace of product section */}
         <div id="blog" className='pl-5 pr-5'></div> {/** close brace of blog section */}
         <div id="about" className='pl-5 pr-5'></div> {/** close brace of about section */}
