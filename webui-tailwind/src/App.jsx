@@ -10,8 +10,10 @@ import coffee2 from './assets/coffee-2.jpg'
 import coffee3 from './assets/coffee-3.jpg'
 import coffee4 from './assets/coffee-4.jpg'
 
-import product1 from './assets/coffee-6.jpg'
-import product2 from './assets/coffee-7.jpg'
+import product1 from './assets/product-1.jpg'
+import product2 from './assets/product-2.jpg'
+import product3 from './assets/product-3.jpg'
+import product4 from './assets/product-4.jpg'
 
 const App = () => {
 
@@ -365,14 +367,237 @@ const App = () => {
             </div> {/** close brace fo card */}
           </div>  {/** close brace of grid layout */}
         </div>  {/** close brace of #menu */}
+
         <div id="product" className='pl-5 pr-5'>
           <div className="p-5 pt-10">
             <div className="text-[26px] font-bold text-center uppercase">
-              product
+              our product
             </div>
           </div>
-          <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5 pt-5">
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{backgroundImage: `url(${product1})`}}>
+                  <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                    <BsHeart />
+                  </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                      style={{background: currentColor}}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
 
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product2})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product3})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product4})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product4})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product3})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product2})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
+              <div className="bg-cover bg-center h-64 rounded-2xl p-5"
+                style={{ backgroundImage: `url(${product1})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
+              </div>
+              <div className="p-5">
+                <h5 className="text-2xl font-bold tracking-tight mb-2">
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className="pl-5 pr-5">
+                <p className="text-center font-bold text-2xl">
+                  ${faker.commerce.price(1, 30)}
+                </p>
+                <div className="pt-3 text-center">
+                  <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
+                    style={{ background: currentColor }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div> {/** close brace of product section */}
         <div id="blog" className='pl-5 pr-5'></div> {/** close brace of blog section */}
