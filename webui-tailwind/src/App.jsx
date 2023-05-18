@@ -15,6 +15,11 @@ import product2 from './assets/product-2.jpg'
 import product3 from './assets/product-3.jpg'
 import product4 from './assets/product-4.jpg'
 
+import blog1 from './assets/blog-1.jpg'
+import blog2 from './assets/blog-2.jpg'
+import blog3 from './assets/blog-3.jpg'
+import blog4 from './assets/blog-4.jpg'
+
 const App = () => {
 
   const menuClass = `p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500 hover:-translate-y-1`
@@ -600,8 +605,112 @@ const App = () => {
             </div>
           </div>
         </div> {/** close brace of product section */}
-        <div id="blog" className='pl-5 pr-5'></div> {/** close brace of blog section */}
-        <div id="about" className='pl-5 pr-5'></div> {/** close brace of about section */}
+
+        <div id="blog" className='pl-5 pr-5'>
+          <div className="p-5 pt-10">
+            <div className="text-[26px] font-bold text-center uppercase">
+              Blogs
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-5 pt-5">
+            <div className="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl
+              transform duration-500 hover:-translate-y-2 rounded-2xl overflow-hidden cursor-pointer">
+              <img className="w-full md:w-52 object-cover" src={blog1} alt="image" />
+              <div className="leading-normal">
+                <div className="p-4">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className=" bg-blue-50 p-4">
+                  <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
+                  <div className='pt-2'>
+                    <p>{faker.name.fullName()}</p>
+                    <p>{faker.name.jobTitle()}</p>
+                    <p>{faker.address.city()}</p>
+                    <p>{faker.date.past().toUTCString()}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl
+              transform duration-500 hover:-translate-y-2 rounded-2xl overflow-hidden cursor-pointer">
+              <img className="w-full md:w-52 object-cover" src={blog2} alt="image" />
+              <div className="leading-normal">
+                <div className="p-4">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className=" bg-blue-50 p-4">
+                  <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
+                  <div className='pt-2'>
+                    <p>{faker.name.fullName()}</p>
+                    <p>{faker.name.jobTitle()}</p>
+                    <p>{faker.address.city()}</p>
+                    <p>{faker.date.past().toUTCString()}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl
+              transform duration-500 hover:-translate-y-2 rounded-2xl overflow-hidden cursor-pointer">
+              <img className="w-full md:w-52 object-cover" src={blog3} alt="image" />
+              <div className="leading-normal">
+                <div className="p-4">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className=" bg-blue-50 p-4">
+                  <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
+                  <div className='pt-2'>
+                    <p>{faker.name.fullName()}</p>
+                    <p>{faker.name.jobTitle()}</p>
+                    <p>{faker.address.city()}</p>
+                    <p>{faker.date.past().toUTCString()}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl
+              transform duration-500 hover:-translate-y-2 rounded-2xl overflow-hidden cursor-pointer">
+              <img className="w-full md:w-52 object-cover" src={blog4} alt="image" />
+              <div className="leading-normal">
+                <div className="p-4">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight">
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className=" bg-blue-50 p-4">
+                  <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
+                  <div className='pt-2'>
+                    <p>{faker.name.fullName()}</p>
+                    <p>{faker.name.jobTitle()}</p>
+                    <p>{faker.address.city()}</p>
+                    <p>{faker.date.past().toUTCString()}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> {/** close brace of blog section */}
+
+        <div id="about" className='pl-5 pr-5'>
+          
+        </div> {/** close brace of about section */}
       </div>
     </div>
   )
