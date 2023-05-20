@@ -20,6 +20,15 @@ import blog2 from './assets/blog-2.jpg'
 import blog3 from './assets/blog-3.jpg'
 import blog4 from './assets/blog-4.jpg'
 
+import story1 from './assets/story1.jpg'
+
+import people1 from './assets/people1.jpg'
+import people2 from './assets/people2.jpg'
+import people3 from './assets/people3.jpg'
+import people4 from './assets/people4.jpg'
+import people5 from './assets/people5.jpg'
+import people6 from './assets/people6.jpg'
+
 const App = () => {
 
   const menuClass = `p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500 hover:-translate-y-1`
@@ -32,10 +41,10 @@ const App = () => {
     <div className="bg-gray-50 text-slate-900">
       {/* create to home button */}
       <div className="bg-gray-50 text-gray-700">
-        <div className='fixed bottom-4 right-4' style={{zIndex: '100'}}>
+        <div className='fixed bottom-4 right-4' style={{ zIndex: '100' }}>
           <button type='button'
-            onClick={() => {}}
-            style={{ background: currentColor, borderRadius: '50%'}}
+            onClick={() => { }}
+            style={{ background: currentColor, borderRadius: '50%' }}
             className='text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-gray-50 transform duration-500 hover:-translate-y-2'>
             <a href="#home">
               <BsArrowBarUp />
@@ -123,14 +132,14 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5">
             <div className="mx-auto shadow-2xl pb-8 rounded-b-2xl transform duration-500
               hover:-translate-y-2 bg-white rounded-full">
-              <img className="object-cover w-full rounded-2xl h-64" src={coffee1} alt=""/>
+              <img className="object-cover w-full rounded-2xl h-64" src={coffee1} alt="" />
               <div className="p-5">
                 <div className="flex items center gap-1">
                   <span style={{ color: currentColor }}><BsStarFill /></span>
                   <span style={{ color: currentColor }}><BsStarFill /></span>
                   <span style={{ color: currentColor }}><BsStarFill /></span>
                   <span style={{ color: currentColor }}><BsStarHalf /></span>
-                  <span style={{color: currentColor}}><BsStar /></span>
+                  <span style={{ color: currentColor }}><BsStar /></span>
                 </div>
               </div>
               <div className="pl-5 pr-5">
@@ -143,10 +152,10 @@ const App = () => {
               </div>
               <div className="flex flex-row p-5 justify-between items-baseline">
                 <p>
-                  ${faker.commerce.price(1, 30)} 
+                  ${faker.commerce.price(1, 30)}
                 </p>
                 <button className='rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1'
-                  style={{background: currentColor}}>
+                  style={{ background: currentColor }}>
                   Add to cart
                 </button>
               </div>
@@ -382,10 +391,10 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5 pt-5">
             <div className="mx-auto w-full shadow-2xl pb-8 rounded-2xl transform duration-500 hover:-translate-y-1">
               <div className="bg-cover bg-center h-64 rounded-2xl p-5"
-                style={{backgroundImage: `url(${product1})`}}>
-                  <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
-                    <BsHeart />
-                  </div>
+                style={{ backgroundImage: `url(${product1})` }}>
+                <div className="flex justify-end text-white fill-current text-2xl cursor-pointer">
+                  <BsHeart />
+                </div>
               </div>
               <div className="p-5">
                 <h5 className="text-2xl font-bold tracking-tight mb-2">
@@ -401,7 +410,7 @@ const App = () => {
                 </p>
                 <div className="pt-3 text-center">
                   <button className="rounded-full p-2 w-36 font-bold text-gray-50 transform duration-500 hover:-translate-y-1"
-                      style={{background: currentColor}}>
+                    style={{ background: currentColor }}>
                     Add to cart
                   </button>
                 </div>
@@ -628,9 +637,9 @@ const App = () => {
                 <div className=" bg-blue-50 p-4">
                   <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
                   <div className='pt-2'>
-                    <p>{faker.name.fullName()}</p>
-                    <p>{faker.name.jobTitle()}</p>
-                    <p>{faker.address.city()}</p>
+                    <p className='font-bold'>{faker.name.fullName()}</p>
+                    <p className='font-light text-sm'>{faker.name.jobTitle()}</p>
+                    <p className='font-light text-sm'>{faker.address.city()}</p>
                     <p>{faker.date.past().toUTCString()}</p>
                   </div>
                 </div>
@@ -651,9 +660,9 @@ const App = () => {
                 <div className=" bg-blue-50 p-4">
                   <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
                   <div className='pt-2'>
-                    <p>{faker.name.fullName()}</p>
-                    <p>{faker.name.jobTitle()}</p>
-                    <p>{faker.address.city()}</p>
+                    <p className='font-bold'>{faker.name.jobTitle()}</p>
+                    <p className='font-light text-sm'>{faker.name.fullName()}</p>
+                    <p className='font-light text-sm'>{faker.address.city()}</p>
                     <p>{faker.date.past().toUTCString()}</p>
                   </div>
                 </div>
@@ -674,9 +683,9 @@ const App = () => {
                 <div className=" bg-blue-50 p-4">
                   <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
                   <div className='pt-2'>
-                    <p>{faker.name.fullName()}</p>
-                    <p>{faker.name.jobTitle()}</p>
-                    <p>{faker.address.city()}</p>
+                    <p className='font-bold'>{faker.name.fullName()}</p>
+                    <p className='font-light text-sm'>{faker.name.jobTitle()}</p>
+                    <p className='font-light text-sm'>{faker.address.city()}</p>
                     <p>{faker.date.past().toUTCString()}</p>
                   </div>
                 </div>
@@ -697,9 +706,9 @@ const App = () => {
                 <div className=" bg-blue-50 p-4">
                   <img src={faker.image.avatar()} className="mr-3 w-12 rounded-full object-cover inline-flex" alt="blogger-name" />
                   <div className='pt-2'>
-                    <p>{faker.name.fullName()}</p>
-                    <p>{faker.name.jobTitle()}</p>
-                    <p>{faker.address.city()}</p>
+                    <p className='font-bold'>{faker.name.fullName()}</p>
+                    <p className='font-light text-sm'>{faker.name.jobTitle()}</p>
+                    <p className='font-light text-sm'>{faker.address.city()}</p>
                     <p>{faker.date.past().toUTCString()}</p>
                   </div>
                 </div>
@@ -709,8 +718,109 @@ const App = () => {
         </div> {/** close brace of blog section */}
 
         <div id="about" className='pl-5 pr-5'>
-          
+          <div className="p-5 pr-5">
+            <div className="text-[26px] font-bold text-center uppercase">
+              Our Story
+            </div>
+          </div>
+          <div className="transform duration-500 hover:-translate-y-2 shadow-2xl hover:shadow-2xl rounded-t-2xl overflow-hidden">
+            <img
+              src={story1}
+              className="object-cover w-full h-[380px]" alt='story-photo' />
+
+            <div className="md:flex md:justify-between gap-5 p-10 sm:p-5 md:p-10">
+              <div className='w-1/2 text-2xl font-semibold'>
+                Product
+              </div>
+              <div className='w-full'>
+                {faker.lorem.sentences()}
+              </div>
+            </div>
+
+            <div className="md:flex md:justify-between gap-5 p-10 sm:p-5 md:p-10">
+              <div className="w-1/2 text-2xl font-semibold">
+                Contact Us
+              </div>
+              <div className="w-full">
+                <p>Telephone : {faker.phone.number()}</p>
+                <p>Email : {faker.internet.email()}</p>
+              </div>
+            </div>
+
+            {/* Responsive layout design */}
+            <div className="md:flex md:flex-wrap md:justify-between gap-5 p-10 sm:p-5 md:p-10">
+              <div className="text-2xl font-semibold">
+                Our Team
+              </div>
+              <div className="md:flex md:flex-wrap gap-5 pt-5">
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people1}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people2}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people3}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people4}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people5}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+
+                <div className="lg:max-w-2xl md:max-w-md md:px-5 mx-auto pb-5">
+                  <img src={people6}
+                    className='object-cover rounded-xl max-h-[250px] max-w-[250px]'
+                    alt="people-photo" />
+                  <div className="lg:text-center pt-3 sm:text-left">
+                    <p className="font-semibold">{faker.name.fullName()}</p>
+                    <p className="font-light">{faker.name.jobTitle()}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div> {/** close brace of about section */}
+        <div className="p-10 text-center">
+          <div className="">
+            &copy;&nbsp; Copyright &nbsp; - &nbsp; {new Date().getFullYear()} &nbsp; | &nbsp; All Rights Reserved
+          </div>
+        </div> {/** close brace of footer section */}
       </div>
     </div>
   )
