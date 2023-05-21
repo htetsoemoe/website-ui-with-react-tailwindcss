@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { faker } from '@faker-js/faker';
 import { BsList, BsSearch, BsCart4, BsStarFill, BsStarHalf, BsStar, BsHeart, BsArrowBarUp } from 'react-icons/bs'
 import { AiOutlineLogin } from 'react-icons/ai'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import logo from './assets/logo.jpg'
 import coffeeBean from './assets/coffee-bean.jpg'
@@ -32,10 +33,16 @@ import people6 from './assets/people6.jpg'
 const App = () => {
 
   const menuClass = `p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500 hover:-translate-y-1`
-  const menuClassActive = `p-2 pl-5 pr-5 bg-gray-200 rounded-lg hover:ease-in-out duration-500 hover:-translate-y-1`
+  const menuClassActive = `p-2 pl-5 pr-5 bg-gray-200 rounded-lg hover:ease-in-out duration-500 hover:-translate-y-1
+                            dark:bg-gray-600`
   const isActive = true
   const currentColor = '#03C9D7'
 
+  const [isDarkMode, setDarkMode] = useState(false)
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked)
+  }
 
   return (
     <div className="bg-gray-50 text-slate-900">
@@ -52,7 +59,7 @@ const App = () => {
           </button>
         </div>
       </div>
-      <div className="container mx-auto transform duration-500">
+      <div className="container mx-auto transform duration-500 dark:bg-black">
         <div id="home" className="pl-4 pr-4 pt-5 pb-10">
           <div className="flex justify-between items-center align-middle">
             <div className='flex items-center gap-3'>
@@ -96,6 +103,12 @@ const App = () => {
               </div>
               <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
                 <AiOutlineLogin />
+              </div>
+              <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
+                <DarkModeSwitch
+                  checked={isDarkMode}
+                  onChange={toggleDarkMode}
+                />
               </div>
             </div>
           </div>
@@ -823,6 +836,7 @@ const App = () => {
         </div> {/** close brace of footer section */}
       </div>
     </div>
+
   )
 }
 
